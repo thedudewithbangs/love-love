@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	background-color: #bcc2ac;
+	margin: 0 auto;
+	width: 40%;
+	font-family: "EB Garamond", serif;
+	font-size: 15px;
+}
+a {
+	color: #2a4522;
+	transition: 400ms;
+}
+a:hover,
+footer > a:hover {
+	color: #eef2e4;
+}
+h1,
+h2,
+.poet {
+	font-family: "Elsie", cursive;
+	font-weight: normal;
+}
+
+/* HEADER */
+h1 {
+	background-color: #485c42;
+	margin: 0;
+	color: #bcc2ac;
+	font-family: "Elsie", cursive;
+	text-align: center;
+	font-size: 2.6rem;
+	padding: 15px 0;
+}
+
+/* MAIN */
+.my-main {
+	padding: 0 20px;
+}
+hr {
+	margin: 40px auto;
+	border: 1px solid rgba(47, 47, 47, 0.438);
+	width: 300px;
+}
+.center {
+	text-align: center;
+}
+#message {
+	margin-top: 30px;
+}
+#message > .center {
+	font-style: italic;
+	margin: 0 auto;
+	width: 80%;
+}
+.right {
+	text-align: right;
+}
+.border {
+	font-size: 1.1rem;
+}
+
+/* TABLE OF CONTENTS */
+li {
+	list-style: none;
+	padding-bottom: 10px;
+}
+li:not(:first-child) {
+	padding-top: 10px;
+}
+ul {
+	padding: 0;
+}
+
+/* THE POEMS */
+.description {
+	text-align: justify;
+	line-height: 25px;
+}
+.source-link {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+.poem {
+	display: flex;
+	place-items: center;
+	text-align: center;
+	flex-direction: column;
+	font-size: 1.2rem;
+}
+.poet {
+	text-align: center;
+	margin: 5px 0;
+	background-color: #485c42;
+	color: #bcc2ac;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+/* FOOTER */
+footer {
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #485c42;
+	color: #b1b7b0;
+}
+footer > a {
+	color: #bcc2ac;
+	transition: 400ms;
+}
+
+.fa-code {
+	color: #103305;
+	padding-right: 5px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+	body {
+		width: 100%;
+	}
+
+	/* HEADER */
+	h1 {
+		font-size: 1.5rem;
+	}
+	.poem {
+		font-size: 1rem;
+	}
+	.poet {
+		font-size: 1.2rem;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	body {
+		width: 100%;
+	}
+
+	/* MAIN */
+	.my-main {
+		padding: 0 40px;
+	}
+
+	/* HEADER */
+	h1 {
+		font-size: 2rem;
+	}
+	.poem {
+		font-size: 1.1rem;
+	}
+	.poet {
+		font-size: 1.3rem;
+	}
+}
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+	body {
+		width: 90%;
+	}
+
+	/* MAIN */
+	.my-main {
+		padding: 0 20px;
+	}
+
+	/* HEADER */
+	h1 {
+		font-size: 2rem;
+	}
+	.poem {
+		font-size: 1.2rem;
+	}
+	.poet {
+		font-size: 1.4rem;
+	}
+}
